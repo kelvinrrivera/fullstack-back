@@ -1,11 +1,6 @@
 name: Pipeline Backend
 
-on:
- push:
- branches: [ main ]
- pull_request:
- branches: [ main ]
- workflow_dispatch:
+on: [push]
 
 jobs:
   build:
