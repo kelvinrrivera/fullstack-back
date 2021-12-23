@@ -1,6 +1,4 @@
-"""
-Probando Persistencia
-"""
+""" Probando Persistencia """
 import persistencia
 def test_guardar_pedido():
 """
