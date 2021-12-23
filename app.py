@@ -1,14 +1,15 @@
-from flask import Flask
-from flask import request
-from flask import Flask, request, redirect
+""" App.py """
 
+from flask import Flask, request, redirect, Response
 from persistencia import guardar_pedido
-from flask import request
 
 app = Flask(__name__)
 
 @app.route("/pizza",methods=['POST'])
 def pedido_pizza():
+    """ 
+    Registra pedido 
+    """
     nombre = request.form.get("ifname")
     apellidos = request.form.get("ilname")
 
@@ -20,5 +21,3 @@ def pedido_pizza():
     guardar_pedido(nombre,apellidos)
     
     return redirect("http://localhost/solicita_pedido.html", code=302)
-
-
