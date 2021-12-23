@@ -19,5 +19,4 @@ def pedido_pizza():
 
     print(nombre,apellidos)
     guardar_pedido(nombre,apellidos)
-    
     return redirect("http://localhost/solicita_pedido.html", code=302)
