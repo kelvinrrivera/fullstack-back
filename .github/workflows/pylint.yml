@@ -13,7 +13,7 @@ jobs:
         pip install pytest flask
     - name: Pylint
       run: |
-        pylint *.py
+        pylint `ls -R|grep .py$|xargs`
     - name: Pytest
       run: |
-        pytest pytest test_*.py
+        pytest `ls -R|grep test_*.py$|xargs
