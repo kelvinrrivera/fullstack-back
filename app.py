@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 @app.route("/pizza",methods=['POST'])
 def pedido_pizza():
-    """ 
-    Registra pedido 
+    """
+    Registra pedido
     """
     nombre = request.form.get("ifname")
     apellidos = request.form.get("ilname")
