@@ -1,6 +1,6 @@
 """ App.py """
 
-from flask import Flask, request, redirect, Response
+from flask import Flask, request, redirect
 from persistencia import guardar_pedido
 
 app = Flask(__name__)
